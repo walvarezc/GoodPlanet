@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".RecoveryPassActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:background="@drawable/customborder"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:text="@string/recuperar_contrase_a"
+                android:textColor="@color/teal_700"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/xTxtRecoveryEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:hint="Introduce tu correo"
+                android:importantForAutofill="no"
+                android:textColorHint="@color/teal_700"
+                tools:ignore="HardcodedText,TouchTargetSizeCheck,TextContrastCheck" />
+
+            <Button
+                android:id="@+id/btn_Enviar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/teal_700"
+                android:fontFamily="sans-serif"
+                android:text="Enviar"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText,TextContrastCheck" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:background="?attr/selectableItemBackground"
+    app:cardElevation="3dp"
+    android:layout_height="?attr/listPreferredItemHeightLarge">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:id="@+id/Image_View"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/plastic"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:layout_weight="4"
+                android:orientation="vertical">
+
+
+
+                <com.codesgood.views.JustifiedTextView
+                    android:id="@+id/txt_nombre_ViewText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/baloo_chettan"
+                    android:text="@string/txt_HDPE"
+                    android:textColor="@color/teal_700" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+

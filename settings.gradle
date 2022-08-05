@@ -1,0 +1,11 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven { url("/Path/to/the/unzipped_folder") }
+    }
+}
+rootProject.name = "GoodPlanet"
+include ':app'

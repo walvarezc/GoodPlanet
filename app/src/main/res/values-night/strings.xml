@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="txt_action_phone">llamar</string>
+    <string name="google">Google</string>
+    <string name="recuperar_contrase_a">Recuperar Contraseña</string>
+    <string name="hola">Hola, GOODPLANET quiere felicitarte por tu aporte al cuidado del planeta</string>
+
+
+</resources>

@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menuLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#009688"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@android:color/primary_text_dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:layout_gravity="center"
+        android:layout_margin="1dp"
+        android:background="@drawable/customborder"
+        android:orientation="horizontal" >
+
+        <com.google.android.youtube.player.YouTubePlayerView
+            android:id="@+id/youtube_player"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+<!--    <Button-->
+<!--        android:id="@+id/btnPlay"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:text="Play Video"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="12sp"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/youtubePlayer"-->
+<!--        tools:ignore="TextContrastCheck" />-->
+
+    <LinearLayout
+        android:id="@+id/registerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+
+        android:background="@drawable/customborder"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <androidx.legacy.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="-5dp"
+            android:layout_marginTop="-9dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/shapeableImageView1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="start"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/profile" />
+
+            <com.codesgood.views.JustifiedTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/baloo_chettan"
+                android:text="@string/hola"
+                android:textColor="@color/teal_700"
+                android:textSize="16sp"
+                tools:ignore="TextContrastCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/baloo_chettan"
+                android:text="Puntos Acumulados"
+                android:textStyle="bold"
+                android:textColor="@color/teal_700"
+                android:textSize="16sp" />
+
+            <androidx.legacy.widget.Space
+                android:layout_width="71dp"
+                android:layout_height="20dp" />
+
+            <Button
+                android:id="@+id/btnPuntosA"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="22dp"
+                android:elevation="6dp"
+                android:fontFamily="@font/baloo_chettan"
+                android:text="xxxxx"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:cornerRadius="15dp"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:fontFamily="@font/baloo_chettan"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:text="Nivel de Getion Ambiental"
+                android:textColor="@color/teal_700"
+                android:textSize="16sp" />
+            <androidx.legacy.widget.Space
+                android:layout_width="50dp"
+                android:layout_height="20dp" />
+
+            <Button
+                android:id="@+id/btnNivelA"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:elevation="6dp"
+                android:fontFamily="@font/baloo_chettan"
+                android:text="xxxxx"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:cornerRadius="15dp"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/baloo_chettan"
+                android:text="Kilos Recuperados"
+                android:textStyle="bold"
+                android:textColor="@color/teal_700"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+            <androidx.legacy.widget.Space
+                android:layout_width="105dp"
+                android:layout_height="20dp"/>
+            <Button
+                android:id="@+id/btnKilos"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:elevation="6dp"
+                android:fontFamily="@font/baloo_chettan"
+                android:text="xxxxx"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:cornerRadius="15dp"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+        </LinearLayout>
+        <androidx.legacy.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:background="@drawable/customborder"
+                android:padding="1dp"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnEduc"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="15dp"
+                    android:backgroundTint="@color/white"
+                    android:clickable="true"
+                    android:contentDescription="@string/IB"
+                    android:elevation="8dp"
+                    android:focusable="true"
+                    android:drawableBottom="@drawable/educa1"
+                    app:cornerRadius="20dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </LinearLayout>
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:background="@drawable/customborder"
+                android:padding="1dp"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/imgViewluna"
+                    android:layout_width="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="60dp"
+                    android:padding="8dp"
+                    android:layout_marginTop="-12dp"
+                    android:src="@drawable/alert" />
+                <androidx.legacy.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="-10dp"
+                    android:layout_marginTop="-10dp" />
+
+                <Button
+                    android:id="@+id/btn_Recoger"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:backgroundTint="@color/white"
+                    android:elevation="36dp"
+                    android:fontFamily="@font/baloo_chettan"
+                    android:text="Solicitar Recoger Saquito"
+                    android:textColor="@color/teal_700"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    app:cornerRadius="20dp"
+                    tools:ignore="SmallSp,TextContrastCheck,TouchTargetSizeCheck" />
+
+            </LinearLayout>
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/customborder"
+                android:layout_marginStart="9dp">
+                <Button
+                    android:id="@+id/btn_Ruta"
+                    android:drawableLeft="@drawable/ruta2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:backgroundTint="@color/white"
+                    android:elevation="36dp"
+                    android:fontFamily="@font/baloo_chettan"
+                    android:text="Mi ruta recolectora"
+                    android:textColor="@color/teal_700"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="-9dp"
+                    android:layout_gravity="center"
+                    app:cornerRadius="10dp"
+                    android:src="@mipmap/ic_ruta2"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+
+                <Button
+                    android:id="@+id/btn_Cuenta"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:backgroundTint="@color/white"
+                    android:drawableLeft="@mipmap/ic_cuenta2"
+                    android:elevation="36dp"
+                    android:fontFamily="@font/baloo_chettan"
+                    android:padding="1dp"
+                    android:text="Estado de cuenta"
+                    android:textColor="@color/teal_700"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:cornerRadius="10dp"
+                    tools:ignore="HardcodedText,RtlHardcoded,TextContrastCheck" />
+                <Button
+                    android:id="@+id/btn_Promo"
+                    android:drawableLeft="@mipmap/ic_promo"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:backgroundTint="@color/white"
+                    android:elevation="36dp"
+                    android:fontFamily="@font/baloo_chettan"
+                    android:text="Promociones"
+                    android:textColor="@color/teal_700"
+                    android:textSize="14sp"
+                    android:padding="1dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    app:cornerRadius="12dp"
+                    android:src="@mipmap/ic_ruta2"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+</LinearLayout>
+
+
+

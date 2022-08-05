@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "916836146059",
+    "firebase_url": "https://goodplanet-32fd4-default-rtdb.firebaseio.com",
+    "project_id": "goodplanet-32fd4",
+    "storage_bucket": "goodplanet-32fd4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916836146059:android:e2f9bb8aeb62857b83ad8e",
+        "android_client_info": {
+          "package_name": "com.example.goodplanet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "916836146059-9t5jdae745psqfl5tb1h7l003j9ghpkb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.goodplanet",
+            "certificate_hash": "378a0cb832217897f798744941ff454ef79ee374"
+          }
+        },
+        {
+          "client_id": "916836146059-btufhaul5i44ta93e99qa63oahlq3utb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1tK-ax9E5FDR4ZfHtkFBcxQ7SdBcZGVg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "916836146059-btufhaul5i44ta93e99qa63oahlq3utb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
